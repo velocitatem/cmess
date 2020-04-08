@@ -15,16 +15,13 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build-localhost": "PUBLIC_URL=/ react-scripts build"
   },
   "eslintConfig": {
     "extends": "react-app"
   },
-   "scripts": {
-    "build": "react-scripts build",
-    "build-localhost": "PUBLIC_URL=/ react-scripts build"
-    // ...
-  },
+
   "browserslist": {
     "production": [
       ">0.2%",
