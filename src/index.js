@@ -18,9 +18,17 @@ ReactDOM.render(
         <Link to={`/create`}></Link>
       </aside>
         <main>
-            <Route exact path="/" render={Welcome} />
-            <Route path="/results" render={Results} />
-            <Route path="/create" render={Create} />
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div id="mid">
+                  <Route exact path="/" render={Welcome} />
+                  <Route path="/results" render={Results} />
+                  <Route path="/create" render={Create} />
+                  </div>
+                </div>
+              </div>
+            </div>
         </main>
       </div>
   </Router>
