@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Link, Route } from 'react-router-dom'
 import Header from './components/Header'
 import Welcome from './components/TitlePage'
 import Results from './components/Results'
-import Create from './components/Input'
+import { Create } from './components/Input'
 ReactDOM.render(
  <div>
     <Header></Header>
