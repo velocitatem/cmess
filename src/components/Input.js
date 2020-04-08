@@ -1,13 +1,25 @@
 import React from 'react';
+import $ from "jquery"
 
-function Welcome() {
+var retr
+function retry() {
+  retr = $("#userEssay").val()
+}
+
+function Create() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h2>INPUT ELEMENT</h2>
+      <header className="App-header">      
+        <h3>Copy/Write your essay here</h3>
+        <div class="">        
+          <form action="/results/">
+            <textarea placeholder="Lorem ipsum dolor sit amet..." name="essay" type="text" id="userEssay"></textarea>
+            <button onClick={retry}>Evaluate</button>
+          </form>
+        </div>
       </header>
     </div>
   );
 }
 
-export default Welcome;
+export {Create, retr};
