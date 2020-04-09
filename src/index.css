@@ -1,8 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap');
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Baloo Thambi 2', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -57,11 +56,39 @@ tp {
   display: inline;
 }
 
+.headIMG{
+  height: 8cm;
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthenypost.files.wordpress.com%2F2018%2F11%2Fbooks-jan-karon.jpg%3Fquality%3D90%26strip%3Dall%26w%3D1200&f=1&nofb=1");
+  background-attachment: fixed;
+}
+
+#codeSpan {
+  background-image: url('../src/components/code.png');
+  height: 4cm;  
+  background-attachment: fixed;
+}
+
+#aboutP {
+  width: 100%
+}
 
 #tamplate {
   overflow: auto;
 }
 
+#span1 {
+  background-color: lightgrey;
+  text-align: center;
+}
+
+#span2 {
+  background-color: lightgray;
+}
+
+#titleSPAN {
+  color: white;
+  padding-top: 3.5cm;
+}
 
 #so {
   color: red;
@@ -79,4 +106,7 @@ tp {
   display: inline;
 }
 
+better{
+  background-color: aquamarine;
+}
 

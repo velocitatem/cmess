@@ -7,6 +7,7 @@ import Header from './components/Header'
 import Welcome from './components/TitlePage'
 import Results from './components/Results'
 import { Create } from './components/Input'
+import About from './components/About'
 ReactDOM.render(
  <div>
     <Header></Header>
@@ -16,6 +17,8 @@ ReactDOM.render(
         <Link to={`/`}></Link>
         <Link to={`/results`}></Link>
         <Link to={`/create/`}></Link>
+        <Link to={`/about`}></Link>
+
       </aside>
         <main>
             <div class="container">
@@ -25,6 +28,7 @@ ReactDOM.render(
                   <Route exact path="/" render={Welcome} />
                   <Route path="/results" render={Results} />
                   <Route path="/create/" render={Create} />
+                  <Route path="/about" render={About} />
                   </div>
                 </div>
               </div>
