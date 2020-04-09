@@ -14,3 +14,36 @@ code {
 #mid {
   padding-top: 0.5cm;
 }
+
+#informal {
+  color: royalblue;
+}
+#noERR {
+  text-align: center;
+}
+#TPimg {
+  width: 100%;
+}
+#pageTitile {
+  text-align: center;
+}
+tp {
+  text-decoration: solid;
+  color: rgb(80, 87, 94);
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+#whatDo {  
+}
+#about2 {
+  text-decoration: solid;
+  color: rgb(80, 87, 94);
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
