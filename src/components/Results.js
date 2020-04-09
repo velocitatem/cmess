@@ -9,7 +9,7 @@ const wasOPT = `
 var essay
 function show(){
   $("#heading").html("Results")
-  var url = new URLSearchParams(window.location.search);
+  var url = new URLSearchParams(decodeURI(window.location.search));
   var output = url.get('essay');
   essay = output  
   $("#essayWrap").attr("style","overflow: scroll; height: 5cm; border: solid;")
