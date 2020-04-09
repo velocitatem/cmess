@@ -15,7 +15,7 @@ ReactDOM.render(
       <aside>
         <Link to={`/`}></Link>
         <Link to={`/results`}></Link>
-        <Link to={`/create`}></Link>
+        <Link to={`/create/`}></Link>
       </aside>
         <main>
             <div class="container">
@@ -24,7 +24,7 @@ ReactDOM.render(
                   <div id="mid">
                   <Route exact path="/" render={Welcome} />
                   <Route path="/results" render={Results} />
-                  <Route path="/create" render={Create} />
+                  <Route path="/create/" render={Create} />
                   </div>
                 </div>
               </div>

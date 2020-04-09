@@ -17,13 +17,14 @@ function show(){
 var x
 function evaluate(data) {
   var wordCount = data.split(' ').length
-  var sentecesCount = data.split('.')
-  sentecesCount = sentecesCount.indexOf("")
+  data = data.trim()
+  var sentecesCount = data.split('.').length - 1 
   var words = data.split(' ')
   var Iusage = 0
   var theUsage = 0
   var isUsage = 0
   var Informal = 0
+  var wasCount = 0
   for(x in words) {
     
 
@@ -42,11 +43,11 @@ function evaluate(data) {
           break;        
       case "Is":
         isUsage += 1
-        words[x] = "<b>"+words[x]+"</b>"
+        words[x] = "<a id='wasis'>"+words[x]+"</a>"
         break;
         case "is":
           isUsage += 1
-          words[x] = "<b>"+words[x]+"</b>"
+          words[x] = "<a id='wasis'>"+words[x]+"</a>"
           break;
           case "yeah":
             Informal += 1
@@ -72,10 +73,22 @@ function evaluate(data) {
             Informal += 1
             words[x] = "<a id='informal'>"+words[x]+"</a>"
             break;   
+            case "aight":
+            Informal += 1
+            words[x] = "<a id='informal'>"+words[x]+"</a>"
+            break;
             case "duh":
             Informal += 1
             words[x] = "<a id='informal'>"+words[x]+"</a>"
             break;
+            case "was":
+              wasCount += 1
+              words[x] = "<a id='wasis'>"+words[x]+"</a>"
+              break;
+              case "Was":
+                wasCount += 1
+                words[x] = "<a id='wasis'>"+words[x]+"</a>"
+                break;
       default:
         console.log("word: "+words[x])
         break;
@@ -83,7 +96,7 @@ function evaluate(data) {
   }
 //grading
 $("#resultsH").html("<h2>Issues:</h2>")
-  if (Iusage > (sentecesCount/2)) {
+  if (Iusage > ((wordCount)*0.05)) {
     issue("'I' is over-used", "to fix this issue try to lower the frequency of usage. a maximum half the sentences should have 'I' in them")
   }
   else {}
@@ -91,9 +104,23 @@ $("#resultsH").html("<h2>Issues:</h2>")
     issue("Text contains informal language", "try changing the words highlighted in blue")
   } 
   else {}
-
+  if (isUsage > ((wordCount)*0.03)) {
+    issue("'Is' is over-used", "express the prase in a more active way")
+  }
+  else {}
+  if (wasCount > ((wordCount)*0.03)) {
+    issue("'Was' is over-used", "Here is an example of how you can fix this issue. EX: 'the letter was mailed by sally' => 'sally mailed the letter'")
+  }
+  else {}
+  if (theUsage > ((wordCount)*0.03)) {
+    issue("'The' is over-used", "The word 'the' is very hard to replace and not use but try to find a way to limit the usage in every way you can.")
+  }
+  else {}
   if ($("#results").html() === ""){
     $("#results").html("<h2 id='noERR'>Yayy, no important errors found!</h2>")
+  }
+  else {
+    $("#formA").append("<button>Re-Write</button>")
   }
   console.table({Iusage, theUsage, isUsage, wordCount, sentecesCount})  
   var aboutText = `
@@ -105,6 +132,7 @@ $("#resultsH").html("<h2>Issues:</h2>")
   `
   $("#aboutText").html(aboutText)
   $("#essayBody").html(words.join(" ", words))
+  $("#formTR").val(encodeURI($("#results").html()))
 }
 
 function issue(problem, fix) {
@@ -121,18 +149,22 @@ function Welcome() {
   return (
     <div>
         <h2 id="heading" ><button id="show" onClick={show}>Show Results</button> </h2>
+                      
         <p id="Icount"></p>
         <div id="essayWrap">
-          <p id="essayBody">
-            
+          <p id="essayBody">            
           </p>
         </div>
+        
         <p id="aboutText">          
         </p>
         <p id="resultsH">
         </p>
         <p id="results">
         </p>
+        <form action="/create" id="formA">   
+        <input type="hidden" name="tobechecked" id="formTR"></input>
+        </form>
 
     </div>
   );

@@ -31,9 +31,19 @@ tp {
   text-decoration: solid;
   color: rgb(80, 87, 94);
 }
-#whatDo {  
+#show {
+  border: none;
+  background-color: black;
+  color: white;
 }
 #about2 {
   text-decoration: solid;
   color: rgb(80, 87, 94);
+}
+#wasis{
+  color: chocolate;
+}
+
+#tamplate {
+  overflow: auto;
 }
