@@ -1,5 +1,11 @@
 import React from 'react';
 import $ from "jquery"
+const soOPT = `
+<p id="soOPT">then, therefore, hence, consequently</p>
+`
+const wasOPT = `
+<p id="wasOPT">befall, occur, come about, transpire, take place</p>
+`
 
 var essay
 function show(){
@@ -25,6 +31,7 @@ function evaluate(data) {
   var isUsage = 0
   var Informal = 0
   var wasCount = 0
+  var soCount = 0
   for(x in words) {
     
 
@@ -83,12 +90,20 @@ function evaluate(data) {
             break;
             case "was":
               wasCount += 1
-              words[x] = "<a id='wasis'>"+words[x]+"</a>"
+              words[x] = "<a id='wasis'>"+words[x]+"</a>"+wasOPT
               break;
               case "Was":
                 wasCount += 1
-                words[x] = "<a id='wasis'>"+words[x]+"</a>"
+                words[x] = "<a id='wasis'>"+words[x]+"</a>"+wasOPT
                 break;
+                case "So":
+                  soCount += 1
+                  words[x] = "<a id='so'>"+words[x]+"</a>"+soOPT
+                  break;
+                  case "so":
+                    soCount += 1
+                    words[x] = "<a id='so'>"+words[x]+"</a>"+soOPT
+                    break;
       default:
         console.log("word: "+words[x])
         break;
@@ -114,6 +129,10 @@ $("#resultsH").html("<h2>Issues:</h2>")
   else {}
   if (theUsage > ((wordCount)*0.03)) {
     issue("'The' is over-used", "The word 'the' is very hard to replace and not use but try to find a way to limit the usage in every way you can.")
+  }
+  else {}
+  if (soCount > ((wordCount)*0.03)) {
+    issue("'So' is over-used", "Try using one of these synonyms: Thus, in this/that way, in such manener, to this extent, then, therefore, hence, consequently")
   }
   else {}
   if ($("#results").html() === ""){

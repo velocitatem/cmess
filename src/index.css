@@ -44,7 +44,39 @@ tp {
 #wasis{
   color: chocolate;
 }
+#wasis:hover + #wasOPT{
+  display: inline;
+}
+#wasOPT {
+  display: none;
+  border: solid;
+  border-width: 0.001cm;
+  color:blue;
+}
+#wasOPT:hover {
+  display: inline;
+}
+
 
 #tamplate {
   overflow: auto;
 }
+
+
+#so {
+  color: red;
+}
+#so:hover + #soOPT{
+  display: inline;
+}
+#soOPT {
+  display: none;
+  border: solid;
+  border-width: 0.001cm;
+  color:blue;
+}
+#soOPT:hover {
+  display: inline;
+}
+
+
