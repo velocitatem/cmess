@@ -22,10 +22,11 @@ function show(){
 }
 var x
 function evaluate(data) {
-  var wordCount = data.split(' ').length
   data = data.trim()
-  var sentecesCount = data.split('.').length - 1 
+  var wordCount = data.split(' ').length
   var words = data.split(' ')
+  data = data.replace("!", "").replace("?", "")
+  var sentecesCount = data.split('.').length - 1   
   var Iusage = 0
   var theUsage = 0
   var isUsage = 0
@@ -34,7 +35,7 @@ function evaluate(data) {
   var soCount = 0
   for(x in words) {
     
-
+//filter
     switch (words[x]) {
       case "I":
         Iusage += 1
@@ -84,6 +85,22 @@ function evaluate(data) {
             Informal += 1
             words[x] = "<a id='informal'>"+words[x]+"</a>"
             break;
+            case "y'all ":
+            Informal += 1
+            words[x] = "<a id='informal'>"+words[x]+"</a>"
+            break;
+            case "Y'all ":
+              Informal += 1
+              words[x] = "<a id='informal'>"+words[x]+"</a>"
+              break;
+              case "yall ":
+                Informal += 1
+                words[x] = "<a id='informal'>"+words[x]+"</a>"
+                break;
+                case "Yall ":
+                  Informal += 1
+                  words[x] = "<a id='informal'>"+words[x]+"</a>"
+                  break;
             case "duh":
             Informal += 1
             words[x] = "<a id='informal'>"+words[x]+"</a>"
@@ -111,7 +128,7 @@ function evaluate(data) {
   }
 //grading
 $("#resultsH").html("<h2>Issues:</h2>")
-  if (Iusage > ((wordCount)*0.05)) {
+  if (Iusage > ((wordCount)*0.1)) {
     issue("'I' is over-used", "to fix this issue try to lower the frequency of usage. a maximum half the sentences should have 'I' in them")
   }
   else {}
@@ -119,7 +136,7 @@ $("#resultsH").html("<h2>Issues:</h2>")
     issue("Text contains informal language", "try changing the words highlighted in blue")
   } 
   else {}
-  if (isUsage > ((wordCount)*0.03)) {
+  if (isUsage > ((wordCount)*0.06)) {
     issue("'Is' is over-used", "express the prase in a more active way")
   }
   else {}
@@ -131,7 +148,7 @@ $("#resultsH").html("<h2>Issues:</h2>")
     issue("'The' is over-used", "The word 'the' is very hard to replace and not use but try to find a way to limit the usage in every way you can.")
   }
   else {}
-  if (soCount > ((wordCount)*0.03)) {
+  if (soCount > ((wordCount)*0.05)) {
     issue("'So' is over-used", "Try using one of these synonyms: Thus, in this/that way, in such manener, to this extent, then, therefore, hence, consequently")
   }
   else {}
