@@ -14,7 +14,7 @@ function Create() {
         <div class="">        
           <form action="/results/">
             <textarea placeholder="Lorem ipsum dolor sit amet..." name="essay" type="text" id="userEssay"></textarea>
-            <button onClick={retry}>Evaluate</button>
+            <button id="evaluateBtn" onClick={retry}>Evaluate</button>
           </form>
         </div>
       </header>

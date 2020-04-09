@@ -2,4 +2,11 @@
     width: 100%;
     height: 10cm;
     font-size: smaller;
+    border-color: black;
+    border-width: 0.07cm;
+}
+#evaluateBtn {
+    background-color: black;
+    color: white;
+    border: none;    
 }
