@@ -6,7 +6,6 @@ const soOPT = `
 const wasOPT = `
 <p id="wasOPT">befall, occur, come about, transpire, take place</p>
 `
-
 var essay
 function show(){
   $("#heading").html("Results")
@@ -83,9 +82,9 @@ function evaluate(data) {
       words[x] = "<better>" + words[x] + "<b>[Anxcious]</b></better>"
       break;      
       case "its":
-        isUsage += 1
-        words[x] = "<strike>" + words[x] + "</strike><b> it's/it is </b>"
-        break;   
+      isUsage += 1
+      words[x] = "<strike>" + words[x] + "</strike><b> it's/it is </b>"
+      break;
       case "Very":
       veryUsage += 1
       words[x] = "<strike>" + words[x] + "</strike>"
@@ -195,9 +194,10 @@ function evaluate(data) {
       words[x] = "<a id='so'>" + words[x] + "</a>" + soOPT
       break;
       default:
-      console.log("word: " + words[x])
+        console.log()
       break;
     }
+    
   }
 //grading
 $("#resultsH").html("<h2>Issues:</h2>")
@@ -217,7 +217,7 @@ $("#resultsH").html("<h2>Issues:</h2>")
     issue("'Is' is over-used", "express the prase in a more active way")
   }
   else {}
-  if (wasCount > ((wordCount)*0.06)) {
+  if (wasCount > ((wordCount)*0.3)) {
     issue("'Was' is over-used", "Here is an example of how you can fix this issue. EX: 'the letter was mailed by sally' => 'sally mailed the letter'")
   }
   else {}
@@ -227,6 +227,13 @@ $("#resultsH").html("<h2>Issues:</h2>")
   else {}
   if (soCount > ((wordCount)*0.05)) {
     issue("'So' is over-used", "Try using one of these synonyms: Thus, in this/that way, in such manener, to this extent, then, therefore, hence, consequently")
+  }
+  else {}
+  if (wordCount > 19 && sentecesCount > (wordCount / 19)) {
+    issue("Too many sentences", "try making your sentences longer to reach a lower amount of senteces")
+  }
+  else if (wordCount > 19 && sentecesCount < (wordCount / 19)) {
+    issue("Not enough sentences", "try making your sentences shorter to reach a higher amount of senteces")
   }
   else {}
   if ($("#results").html() === ""){
