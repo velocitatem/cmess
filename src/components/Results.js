@@ -17,7 +17,8 @@ function show(){
 var x
 function evaluate(data) {
   var wordCount = data.split(' ').length
-  var sentecesCount = data.split('.').length
+  var sentecesCount = data.split('.')
+  sentecesCount = sentecesCount.indexOf("")
   var words = data.split(' ')
   var Iusage = 0
   var theUsage = 0
