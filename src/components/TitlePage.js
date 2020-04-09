@@ -36,7 +36,7 @@ function Welcome() {
               Informal Language Detector
             </li>
             <li>
-              Plagorism Detection [SOON]
+              Plagorism Detection - coming soon
             </li>
           </ul>
           <a href="/create" >TRY NOW</a>

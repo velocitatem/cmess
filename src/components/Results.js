@@ -120,7 +120,7 @@ $("#resultsH").html("<h2>Issues:</h2>")
     $("#results").html("<h2 id='noERR'>Yayy, no important errors found!</h2>")
   }
   else {
-    $("#formA").append("<button>Re-Write</button>")
+    
   }
   console.table({Iusage, theUsage, isUsage, wordCount, sentecesCount})  
   var aboutText = `
