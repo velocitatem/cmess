@@ -9,7 +9,7 @@ function Header() {
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <a class="navbar-brand" href="/">CMESS</a>
           <li class="nav-item">
-            <a class="nav-link" href="/create">Check Essay</a>            
+            <a class="nav-link" href="/check">Check Essay</a>            
           </li>                  
           <li class="nav-item">
             <a class="nav-link" href="/about">About</a>            

@@ -41,7 +41,7 @@ function Welcome() {
               Plagorism Detection - coming soon
             </li>
           </ul>
-          <a href="/create" >TRY NOW</a>
+          <a href="/check" >TRY NOW</a>
         </p>
         </p>
 

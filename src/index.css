@@ -110,3 +110,26 @@ better{
   background-color: aquamarine;
 }
 
+#err {
+  background-color: lightcoral;
+}
+#fix {
+  display: none;
+  background-color: lightgreen;
+}
+#err:hover + #fix {
+  display: inline;
+}
+#err:active + #fix {
+  display: inline;
+}
+#fix:hover {
+  display: inline;
+}
+
+#issue {
+  color: lightcoral;
+}
+#fixForIssue {
+  color: green;
+}

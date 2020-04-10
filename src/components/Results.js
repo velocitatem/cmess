@@ -20,7 +20,7 @@ function evaluate(data) {
   data = data.trim()
   var wordCount = data.split(' ').length
   var words = data.split(' ')
-  data = data.replace("!", "").replace("?", "")
+  data = data.replace("!", ".").replace("?", ".")
   var sentecesCount = data.split('.').length - 1   
   var Iusage = 0
   var theUsage = 0
@@ -34,10 +34,10 @@ function evaluate(data) {
 //filter
     switch (words[x]) {
       case "your":
-      words[x] = "<strike>" + words[x] + "</strike><b>you're</b>"
+      words[x] = "<strike id='err'>" + words[x] + "</strike><b id='fix'>you're</b>"
       break; 
       case "Your":
-      words[x] = "<strike>" + words[x] + "</strike><b>You're</b>"
+      words[x] = "<strike> id='err'" + words[x] + "</strike><b>You're</b>"
       break;       
       case "afraid":
       words[x] = "<better>" + words[x] + "<b>[terrified]</b></better>"
@@ -83,7 +83,7 @@ function evaluate(data) {
       break;      
       case "its":
       isUsage += 1
-      words[x] = "<strike>" + words[x] + "</strike><b> it's/it is </b>"
+      words[x] = "<strike id='err'>" + words[x] + "</strike><b id='fix'>it's/it is </b>"
       break;
       case "Very":
       veryUsage += 1
@@ -95,19 +95,19 @@ function evaluate(data) {
       break;      
       case "Im":
       Iusage += 1
-      words[x] = "<strike>" + words[x] + "</strike> <b>I am</b>"
+      words[x] = "<strike id='err'>" + words[x] + "</strike> <b id='fix'>I am</b>"
       break;
       case "I'm":
       Iusage += 1
-      words[x] = "<strike>" + words[x] + "</strike> <b>I am</b>"
+      words[x] = "<strike id='err'>" + words[x] + "</strike> <b id='fix'>I am</b>"
       break;
       case "im":
       Iusage += 1
-      words[x] = "<strike>" + words[x] + "</strike> <b>I am</b>"
+      words[x] = "<strike id='err' >" + words[x] + "</strike> <b id='fix'>I am</b>"
       break;
       case "i'm":
       Iusage += 1
-      words[x] = "<strike>" + words[x] + "</strike> <b>I am</b>"
+      words[x] = "<strike id='err'>" + words[x] + "</strike><b id='fix'>I am</b>"
       break;
       case "I":
       Iusage += 1
@@ -201,46 +201,36 @@ function evaluate(data) {
   }
 //grading
 $("#resultsH").html("<h2>Issues:</h2>")
-  if (veryUsage > ((wordCount)*0.5)) {
+  if (veryUsage > ((wordCount) * 0.5)) {
     issue("'Very' is not important", "The word 'Very' is not as important as it may seem")
-  }
-  else {}
-  if (Iusage > ((wordCount)*0.5)) {
+  } else {}
+  if (Iusage > ((wordCount) * 0.5)) {
     issue("'I' is over-used", "to fix this issue try to lower the frequency of usage. a maximum half the sentences should have 'I' in them")
-  }
-  else {}
+  } else {}
   if (Informal > 0) {
     issue("Text contains informal language", "try changing the words highlighted in blue")
-  } 
-  else {}
-  if (isUsage > ((wordCount)*0.06)) {
-    issue("'Is' is over-used", "express the prase in a more active way")
-  }
-  else {}
-  if (wasCount > ((wordCount)*0.3)) {
+  } else {}
+  if (isUsage > ((wordCount) * 0.1)) {
+    issue("'Is' is over-used", "express the phrase in a more active way")
+  } else {}
+  if (wasCount > ((wordCount) * 0.3)) {
     issue("'Was' is over-used", "Here is an example of how you can fix this issue. EX: 'the letter was mailed by sally' => 'sally mailed the letter'")
-  }
-  else {}
-  if (theUsage > ((wordCount)*0.05)) {
+  } else {}
+  if (theUsage > ((wordCount) * 0.05)) {
     issue("'The' is over-used", "The word 'the' is very hard to replace and not use but try to find a way to limit the usage in every way you can.")
-  }
-  else {}
-  if (soCount > ((wordCount)*0.05)) {
+  } else {}
+  if (soCount > ((wordCount) * 0.05)) {
     issue("'So' is over-used", "Try using one of these synonyms: Thus, in this/that way, in such manener, to this extent, then, therefore, hence, consequently")
-  }
-  else {}
+  } else {}
   if (wordCount > 19 && sentecesCount > (wordCount / 19)) {
     issue("Too many sentences", "try making your sentences longer to reach a lower amount of senteces")
-  }
-  else if (wordCount > 19 && sentecesCount < (wordCount / 19)) {
+  } else if (wordCount > 19 && sentecesCount < (wordCount / 19)) {
     issue("Not enough sentences", "try making your sentences shorter to reach a higher amount of senteces")
-  }
-  else {}
-  if ($("#results").html() === ""){
+  } else {}
+  if ($("#results").html() === "") {
     $("#results").html("<h2 id='noERR'>Yayy, no important errors found!</h2>")
-  }
-  else {
-    
+  } else {
+
   }
   console.table({Iusage, theUsage, isUsage, wordCount, sentecesCount})  
   var aboutText = `
@@ -257,9 +247,9 @@ $("#resultsH").html("<h2>Issues:</h2>")
 
 function issue(problem, fix) {
   var issC = `
-  <div class="" id="issue">
-    <b>${problem}</b> <br>
-    <p id="fix">FIX: ${fix} </p>
+  <div class="" id="issueContainer">
+    <b id='issue'>${problem}</b> <br>
+    <p id="fixForIssue">FIX: ${fix} </p>
   </div>
   `
   $("#results").append(issC)
@@ -282,10 +272,6 @@ function Welcome() {
         </p>
         <p id="results">
         </p>
-        <form action="/create" id="formA">   
-        <input type="hidden" name="tobechecked" id="formTR"></input>
-        </form>
-
     </div>
   );
 }
