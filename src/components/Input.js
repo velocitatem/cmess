@@ -14,13 +14,13 @@ function Create() {
   return (
     <div className="App">
       <header className="App-header">      
-        <h3></h3>
+        <h3>Check My Essay</h3>
         <div class="">        
         <p id="tamplate">
 
         </p>
           <form action="/results/">
-            <textarea placeholder="Copy/Write your essay here" name="essay" type="text" id="userEssay"></textarea>
+            <textarea placeholder="Paste/Write your essay here" name="essay" type="text" id="userEssay"></textarea>
             <button id="evaluateBtn" onClick={retry}>Evaluate</button>
           </form>
         </div>

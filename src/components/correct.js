@@ -14,7 +14,7 @@ function Correct() {
         <p id="tamplate">
         </p>
           <form action="/corrected/">
-            <textarea placeholder="Copy/Write your essay here" name="essay" type="text" id="userEssay"></textarea>
+            <textarea placeholder="Paste/Write your essay here" name="essay" type="text" id="userEssay"></textarea>
             <button id="evaluateBtn" onClick={retry}>Correct Essay</button>
           </form>
         </div>
