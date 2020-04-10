@@ -5,7 +5,7 @@ import $ from "jquery"
 
 var retr
 function retry() {
-  $("#userEssay").val(encodeURI($("#userEssay").val()))
+  $("#userEssay").val($("#userEssay").val())
   //localStorage.getItem("lastname")
 }
 

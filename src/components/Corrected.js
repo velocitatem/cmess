@@ -6,7 +6,7 @@ function show(){
   var url = new URLSearchParams(decodeURI(window.location.search));
   var output = url.get('essay');
   essay = output  
-  $("#essayWrap").attr("style","overflow: scroll; height: 5cm; border: solid;")
+  $("#essayWrap").attr("style","overflow: scroll; height: 10cm; border: solid;")
   $("#essayBody").attr("style","overflow: padding: 0.3cm;")
   evaluate(essay)}
 var x
