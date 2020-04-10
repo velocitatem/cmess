@@ -57,8 +57,9 @@ tp {
 }
 
 .headIMG{
-  height: 8cm;
+  height: 10cm;
   background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthenypost.files.wordpress.com%2F2018%2F11%2Fbooks-jan-karon.jpg%3Fquality%3D90%26strip%3Dall%26w%3D1200&f=1&nofb=1");
+  background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
