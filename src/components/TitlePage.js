@@ -70,6 +70,23 @@ function Welcome() {
 
         </div>
       </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <h2>Improve you're essays faster then ever</h2>
+        </div>
+        <div class="col-sm-3">
+          <h4>Find Issues</h4>
+          <p>
+            <a href="http://localhost:3000/results/?essay=ESSAY_BODY">http://localhost:3000/results/?essay=<b>ESSAY_BODY</b></a>
+          </p>
+        </div>
+        <div class="col-sm-3">
+          <h4>Improve Essay</h4>
+          <p>
+          <a href="http://localhost:3000/corrected/?essay=ESSAY_BODY">http://localhost:3000/corrected/?essay=<b>ESSAY_BODY</b></a>
+          </p>
+        </div>
+      </div>
       </div>
     </div>
   );
