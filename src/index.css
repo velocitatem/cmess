@@ -139,11 +139,11 @@ better{
   background-color: lightgreen;
 }
 #navI {
-  background-color: white;
-  color: black;
+
 }
 #navI:hover {
-  background-color: black;
-  color: white;
-  padding: 0.3cm;
+  text-decoration: underline;
+}
+#navI:active {
+  text-decoration: underline;
 }

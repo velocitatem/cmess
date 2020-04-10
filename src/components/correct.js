@@ -9,12 +9,12 @@ function Correct() {
   return (
     <div className="App">
       <header className="App-header">      
-        <h3>Copy/Write your essay here</h3>
+        <h3>Improve My Essay</h3>
         <div class="">        
         <p id="tamplate">
         </p>
           <form action="/corrected/">
-            <textarea placeholder="Lorem ipsum dolor sit amet..." name="essay" type="text" id="userEssay"></textarea>
+            <textarea placeholder="Copy/Write your essay here" name="essay" type="text" id="userEssay"></textarea>
             <button id="evaluateBtn" onClick={retry}>Correct Essay</button>
           </form>
         </div>
