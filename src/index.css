@@ -133,3 +133,16 @@ better{
 #fixForIssue {
   color: green;
 }
+#fixP {
+  display: inline;
+  background-color: lightgreen;
+}
+#navI {
+  background-color: white;
+  color: black;
+}
+#navI:hover {
+  background-color: black;
+  color: white;
+  padding: 0.3cm;
+}

@@ -8,6 +8,8 @@ import Welcome from './components/TitlePage'
 import Results from './components/Results'
 import { Create } from './components/Input'
 import About from './components/About'
+import Corrected from './components/Corrected'
+import Correct from './components/correct';
 ReactDOM.render(
  <div>
     <Header></Header>
@@ -18,6 +20,10 @@ ReactDOM.render(
         <Link to={`/results`}></Link>
         <Link to={`/check/`}></Link>
         <Link to={`/about`}></Link>
+        <Link to={`/corrected`}></Link>
+        <Link to={`/correct`}></Link>
+
+
 
       </aside>
         <main>
@@ -29,6 +35,9 @@ ReactDOM.render(
                   <Route path="/results" render={Results} />
                   <Route path="/check/" render={Create} />
                   <Route path="/about" render={About} />
+                  <Route path="/corrected" render={Corrected} />                 
+                  <Route path="/correct" render={Correct} />                 
+
                   </div>
                 </div>
               </div>

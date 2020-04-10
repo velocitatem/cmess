@@ -9,10 +9,13 @@ function Header() {
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <a class="navbar-brand" href="/">CMESS</a>
           <li class="nav-item">
-            <a class="nav-link" href="/check">Check Essay</a>            
-          </li>                  
+            <a class="nav-link" href="/check" id="navI">Check My Essay</a>            
+          </li>         
           <li class="nav-item">
-            <a class="nav-link" href="/about">About</a>            
+            <a class="nav-link" href="/correct" id="navI">Improve My Essay</a>            
+          </li>          
+          <li class="nav-item">
+            <a class="nav-link" href="/about" id="navI">About</a>            
           </li>    
         </ul>
       </div>        
