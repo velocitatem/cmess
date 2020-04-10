@@ -4,7 +4,8 @@ var essay
 
 var so = ["thus", "therefore"]
 
-function randomFix(original) {
+function randomFix(a, b, c) {
+  let original = [a, b, c]
   return original[Math.floor(Math.random() * original.length)];
 }
 
@@ -32,9 +33,68 @@ function evaluate(data) {
   var soCount = 0
   var veryUsage = 0
   for(x in words) {
-    
+/**
+
+
+
+well	   
 //filter
+"+randomFix('', '')+"
+
+case "Amazing":
+  words[x] = "<better><b>"+randomFix('Incredible', 'Marvelous')+"</b></better>"
+  break;
+*/  
     switch (words[x]) {
+      case "look":
+        words[x] = "<better><b>"+randomFix('glance', 'take a gander', 'look')+"</b></better>"
+        break;
+        case "Look":
+          words[x] = "<better><b>"+randomFix('Glance', 'Take a gander', 'Look')+"</b></better>"
+          break;
+          case "really":
+            words[x] = "<better><b>"+randomFix('truly', 'surely', 'really')+"</b></better>"
+            break;
+            case "Really":
+              words[x] = "<better><b>"+randomFix('truly', 'surely', 'Really')+"</b></better>"
+              break;
+              case "nice":
+                words[x] = "<better><b>"+randomFix('fair', 'fine', 'nice')+"</b></better>"
+                break;
+                case "Nice":
+                  words[x] = "<better><b>"+randomFix('Fair', 'Fine', 'Nice')+"</b></better>"
+                  break;
+                  case "happy":
+                    words[x] = "<better><b>"+randomFix('joyful', 'merry', 'happy')+"</b></better>"
+                    break;
+                    case "Happy":
+                      words[x] = "<better><b>"+randomFix('Joyful', 'Merry', 'Happy')+"</b></better>"
+                      break;
+
+      case "amazing":
+      words[x] = "<better><b>"+randomFix('incredible', 'marvelous', 'amazing')+"</b></better>"
+      break;
+      case "Amazing":
+      words[x] = "<better><b>"+randomFix('Incredible', 'Marvelous', 'Amazing')+"</b></better>"
+      break;
+      case "Awesome":
+        words[x] = "<better><b>"+randomFix('Incredible', 'Marvelous', 'Awesome')+"</b></better>"
+        break;
+        case "awesome":
+          words[x] = "<better><b>"+randomFix('incredible', 'marvelous', 'awesome')+"</b></better>"
+          break;
+          case "beautiful":
+            words[x] = "<better><b>"+randomFix('alluring', 'charming', 'beautiful')+"</b></better>"
+            break;
+            case "Beautiful":
+              words[x] = "<better><b>"+randomFix('Alluring', 'Charming', 'Beautiful')+"</b></better>"
+              break;
+              case "Interesting":
+                words[x] = "<better><b>"+randomFix('Fascinating', 'Intriguing', 'Interesting')+"</b></better>"
+                break;
+                case "interesting":
+                  words[x] = "<better><b>"+randomFix('fascinating', 'intriguing', 'interesting')+"</b></better>"
+                  break;
       case "your":
       words[x] = "<b id='fixP'>you're</b>"
       break; 
