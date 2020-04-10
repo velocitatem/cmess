@@ -61,7 +61,7 @@ function Welcome() {
               Vocabulary inflation
             </li>
             <li>
-              Plagorism Detection - coming soon
+              Plagiarism Detection - coming soon
             </li>
           </ul>
           <a href="/check" >TRY NOW</a>
@@ -77,13 +77,13 @@ function Welcome() {
         <div class="col-sm-3">
           <h4>Find Issues</h4>
           <p>
-            <a href="http://localhost:3000/results/?essay=ESSAY_BODY">http://localhost:3000/results/?essay=<b>ESSAY_BODY</b></a>
+            <a id="custom" href="https://cmess.netlify.com//results/?essay=ESSAY_BODY">https://cmess.netlify.com//results/?essay=<b>ESSAY_BODY</b></a>
           </p>
         </div>
         <div class="col-sm-3">
           <h4>Improve Essay</h4>
           <p>
-          <a href="http://localhost:3000/corrected/?essay=ESSAY_BODY">http://localhost:3000/corrected/?essay=<b>ESSAY_BODY</b></a>
+          <a id="custom" href="https://cmess.netlify.com//corrected/?essay=ESSAY_BODY">https://cmess.netlify.com//corrected/?essay=<b>ESSAY_BODY</b></a>
           </p>
         </div>
       </div>

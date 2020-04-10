@@ -15,7 +15,7 @@ function Correct() {
         </p>
           <form action="/corrected/">
             <textarea placeholder="Paste/Write your essay here" name="essay" type="text" id="userEssay"></textarea>
-            <button id="evaluateBtn" onClick={retry}>Correct Essay</button>
+            <button id="evaluateBtn" onClick={retry}>Improve Essay</button>
           </form>
         </div>
       </header>

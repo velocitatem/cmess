@@ -204,8 +204,8 @@ $("#resultsH").html("<h2>Issues:</h2>")
   if (veryUsage > ((wordCount) * 0.5)) {
     issue("'Very' is not important", "The word 'Very' is not as important as it may seem")
   } else {}
-  if (Iusage > ((wordCount) * 0.5)) {
-    issue("'I' is over-used", "to fix this issue try to lower the frequency of usage. a maximum half the sentences should have 'I' in them")
+  if (Iusage > ((wordCount) * 0.4)) {
+    issue("'I' is over-used", "to fix this issue try to lower the frequency of usage. a maximum half the sentences should have 'I' in them. unless this is a biography")
   } else {}
   if (Informal > 0) {
     issue("Text contains informal language", "try changing the words highlighted in blue")
@@ -216,7 +216,7 @@ $("#resultsH").html("<h2>Issues:</h2>")
   if (wasCount > ((wordCount) * 0.3)) {
     issue("'Was' is over-used", "Here is an example of how you can fix this issue. EX: 'the letter was mailed by sally' => 'sally mailed the letter'")
   } else {}
-  if (theUsage > ((wordCount) * 0.05)) {
+  if (theUsage > ((wordCount) * 0.6)) {
     issue("'The' is over-used", "The word 'the' is very hard to replace and not use but try to find a way to limit the usage in every way you can.")
   } else {}
   if (soCount > ((wordCount) * 0.05)) {

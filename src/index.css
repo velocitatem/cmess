@@ -23,6 +23,11 @@ code {
 #TPimg {
   width: 100%;
 }
+
+#essayBody {
+  padding: 1cm;
+}
+
 #pageTitile {
   text-align: center;
 }
@@ -149,4 +154,7 @@ better{
 }
 #navI:active {
   text-decoration: underline;
+}
+#custom {
+  text-emphasis: center;
 }

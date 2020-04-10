@@ -1,6 +1,13 @@
 import React from 'react';
 import $ from "jquery"
 var essay
+
+var so = ["thus", "therefore"]
+
+function randomFix(original) {
+  return original[Math.floor(Math.random() * original.length)];
+}
+
 function show(){
   $("#heading").html("Results")
   var url = new URLSearchParams(decodeURI(window.location.search));
@@ -14,6 +21,7 @@ function evaluate(data) {
   data = data.trim()
   var wordCount = data.split(' ').length
   data = data.replace("!", ".").replace("?", ".").replace(",", "")  
+  console.log()
   var words = data.split(' ')
   var sentecesCount = data.split('.').length - 1   
   var Iusage = 0
@@ -97,7 +105,7 @@ function evaluate(data) {
       words[x] = "<better><b>exhausted</b></better>"
       break;
       case "Tired":
-      words[x] = "<better><b>[Exhausted]</b></better>"
+      words[x] = "<better><b>Exhausted</b></better>"
       break;
       case "stupid":
       words[x] = "<better><b>idiotic</b></better>"
@@ -227,11 +235,11 @@ function evaluate(data) {
       break;
       case "So":
       soCount += 1
-      words[x] = "<a id='so'>Thus</a>"
+      words[x] = "<a id='so'>"+randomFix(so)+"</a>"
       break;
       case "so":
       soCount += 1
-      words[x] = "<a id='so'>thus</a>"
+      words[x] = "<a id='so'>"+randomFix(so)+"</a>"
       break;
       default:
         console.log()
@@ -267,7 +275,7 @@ function issue(problem, fix) {
 function Corrected() {
   return (
     <div>
-        <h2 id="heading" ><button id="show" onClick={show}>Correct!</button> </h2>
+        <h2 id="heading" ><button id="show" onClick={show}>Improve!</button> </h2>
                       
         <p id="Icount"></p>
         <div id="essayWrap">
