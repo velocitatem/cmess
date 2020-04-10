@@ -1,0 +1,19 @@
+"filename", "language", "Markdown", "JSON", "JavaScript", "CSS", "HTML", "comment", "blank", "total"
+"c:\Users\Daniel Alves Rosel\Documents\Coding\React\Projects\cmess\README.md", "Markdown", 4, 0, 0, 0, 0, 0, 1, 5
+"c:\Users\Daniel Alves Rosel\Documents\Coding\React\Projects\cmess\package.json", "JSON", 0, 37, 0, 0, 0, 0, 1, 38
+"c:\Users\Daniel Alves Rosel\Documents\Coding\React\Projects\cmess\public\index.html", "HTML", 0, 0, 0, 0, 23, 0, 1, 24
+"c:\Users\Daniel Alves Rosel\Documents\Coding\React\Projects\cmess\public\manifest.json", "JSON", 0, 25, 0, 0, 0, 0, 1, 26
+"c:\Users\Daniel Alves Rosel\Documents\Coding\React\Projects\cmess\public\style.css", "CSS", 0, 0, 0, 15, 0, 0, 1, 16
+"c:\Users\Daniel Alves Rosel\Documents\Coding\React\Projects\cmess\src\components\About.js", "JavaScript", 0, 0, 28, 0, 0, 0, 5, 33
+"c:\Users\Daniel Alves Rosel\Documents\Coding\React\Projects\cmess\src\components\Corrected.js", "JavaScript", 0, 0, 277, 0, 0, 2, 10, 289
+"c:\Users\Daniel Alves Rosel\Documents\Coding\React\Projects\cmess\src\components\Footer.js", "JavaScript", 0, 0, 0, 0, 0, 0, 1, 1
+"c:\Users\Daniel Alves Rosel\Documents\Coding\React\Projects\cmess\src\components\Header.js", "JavaScript", 0, 0, 26, 0, 0, 0, 3, 29
+"c:\Users\Daniel Alves Rosel\Documents\Coding\React\Projects\cmess\src\components\Input.js", "JavaScript", 0, 0, 24, 0, 0, 1, 8, 33
+"c:\Users\Daniel Alves Rosel\Documents\Coding\React\Projects\cmess\src\components\Results.js", "JavaScript", 0, 0, 269, 0, 0, 2, 9, 280
+"c:\Users\Daniel Alves Rosel\Documents\Coding\React\Projects\cmess\src\components\TitlePage.js", "JavaScript", 0, 0, 91, 0, 0, 0, 5, 96
+"c:\Users\Daniel Alves Rosel\Documents\Coding\React\Projects\cmess\src\components\correct.js", "JavaScript", 0, 0, 23, 0, 0, 0, 4, 27
+"c:\Users\Daniel Alves Rosel\Documents\Coding\React\Projects\cmess\src\index.css", "CSS", 0, 0, 0, 137, 0, 0, 15, 152
+"c:\Users\Daniel Alves Rosel\Documents\Coding\React\Projects\cmess\src\index.js", "JavaScript", 0, 0, 47, 0, 0, 3, 6, 56
+"c:\Users\Daniel Alves Rosel\Documents\Coding\React\Projects\cmess\src\serviceWorker.js", "JavaScript", 0, 0, 98, 0, 0, 31, 13, 142
+"c:\Users\Daniel Alves Rosel\Documents\Coding\React\Projects\cmess\src\setupTests.js", "JavaScript", 0, 0, 1, 0, 0, 4, 1, 6
+"Total", "-", 4, 62, 884, 152, 23, 43, 85, 1253

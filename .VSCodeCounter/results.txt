@@ -1,0 +1,48 @@
+Date : 2020-04-10 15:09:55
+Directory : c:\Users\Daniel Alves Rosel\Documents\Coding\React\Projects\cmess
+Total : 17 files,  1125 codes, 43 comments, 85 blanks, all 1253 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| JavaScript |         11 |        884 |         43 |         65 |        992 |
+| CSS        |          2 |        152 |          0 |         16 |        168 |
+| JSON       |          2 |         62 |          0 |          2 |         64 |
+| HTML       |          1 |         23 |          0 |          1 |         24 |
+| Markdown   |          1 |          4 |          0 |          1 |          5 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++-----------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                          | files      | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                             |         17 |      1,125 |         43 |         85 |      1,253 |
+| public                                                                                        |          3 |         63 |          0 |          3 |         66 |
+| src                                                                                           |         12 |      1,021 |         43 |         80 |      1,144 |
+| src\components                                                                                |          8 |        738 |          5 |         45 |        788 |
++-----------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-----------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                      | language   | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| c:\Users\Daniel Alves Rosel\Documents\Coding\React\Projects\cmess\README.md                   | Markdown   |          4 |          0 |          1 |          5 |
+| c:\Users\Daniel Alves Rosel\Documents\Coding\React\Projects\cmess\package.json                | JSON       |         37 |          0 |          1 |         38 |
+| c:\Users\Daniel Alves Rosel\Documents\Coding\React\Projects\cmess\public\index.html           | HTML       |         23 |          0 |          1 |         24 |
+| c:\Users\Daniel Alves Rosel\Documents\Coding\React\Projects\cmess\public\manifest.json        | JSON       |         25 |          0 |          1 |         26 |
+| c:\Users\Daniel Alves Rosel\Documents\Coding\React\Projects\cmess\public\style.css            | CSS        |         15 |          0 |          1 |         16 |
+| c:\Users\Daniel Alves Rosel\Documents\Coding\React\Projects\cmess\src\components\About.js     | JavaScript |         28 |          0 |          5 |         33 |
+| c:\Users\Daniel Alves Rosel\Documents\Coding\React\Projects\cmess\src\components\Corrected.js | JavaScript |        277 |          2 |         10 |        289 |
+| c:\Users\Daniel Alves Rosel\Documents\Coding\React\Projects\cmess\src\components\Footer.js    | JavaScript |          0 |          0 |          1 |          1 |
+| c:\Users\Daniel Alves Rosel\Documents\Coding\React\Projects\cmess\src\components\Header.js    | JavaScript |         26 |          0 |          3 |         29 |
+| c:\Users\Daniel Alves Rosel\Documents\Coding\React\Projects\cmess\src\components\Input.js     | JavaScript |         24 |          1 |          8 |         33 |
+| c:\Users\Daniel Alves Rosel\Documents\Coding\React\Projects\cmess\src\components\Results.js   | JavaScript |        269 |          2 |          9 |        280 |
+| c:\Users\Daniel Alves Rosel\Documents\Coding\React\Projects\cmess\src\components\TitlePage.js | JavaScript |         91 |          0 |          5 |         96 |
+| c:\Users\Daniel Alves Rosel\Documents\Coding\React\Projects\cmess\src\components\correct.js   | JavaScript |         23 |          0 |          4 |         27 |
+| c:\Users\Daniel Alves Rosel\Documents\Coding\React\Projects\cmess\src\index.css               | CSS        |        137 |          0 |         15 |        152 |
+| c:\Users\Daniel Alves Rosel\Documents\Coding\React\Projects\cmess\src\index.js                | JavaScript |         47 |          3 |          6 |         56 |
+| c:\Users\Daniel Alves Rosel\Documents\Coding\React\Projects\cmess\src\serviceWorker.js        | JavaScript |         98 |         31 |         13 |        142 |
+| c:\Users\Daniel Alves Rosel\Documents\Coding\React\Projects\cmess\src\setupTests.js           | JavaScript |          1 |          4 |          1 |          6 |
+| Total                                                                                         |            |      1,125 |         43 |         85 |      1,253 |
++-----------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
