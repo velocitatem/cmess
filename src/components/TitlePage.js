@@ -87,7 +87,6 @@ function Welcome() {
               Plagiarism Detection - coming soon
             </li>
           </ul>
-          <a href="/check" >TRY NOW</a>
         </p>
         </p>
 
@@ -97,16 +96,12 @@ function Welcome() {
         <div class="col-sm-6">
           <h2>Improve you're essays faster then ever</h2>
         </div>
-        <div class="col-sm-3">
-          <h4>Find Issues</h4>
-          <p>
-            <a id="custom" href="https://cmess.netlify.com//results/?essay=ESSAY_BODY">https://cmess.netlify.com//results/?essay=<b>ESSAY_BODY</b></a>
-          </p>
+        <div class="col-sm-3">                   
+            <a id="custom" href="https://cmess.netlify.com/check"><b><h4>Find Issues</h4></b></a>          
         </div>
-        <div class="col-sm-3">
-          <h4>Improve Essay</h4>
+        <div class="col-sm-3">          
           <p>
-          <a id="custom" href="https://cmess.netlify.com//corrected/?essay=ESSAY_BODY">https://cmess.netlify.com//corrected/?essay=<b>ESSAY_BODY</b></a>
+          <a id="custom" href="https://cmess.netlify.com/"><b><h4>Improve Essay</h4></b></a>
           </p>
         </div>
       </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import $ from "jquery"
 function retry() {
-  $("#userEssay").val(encodeURI($("#userEssay").val()))
+  $("#userEssay").val($("#userEssay").val())
 }
 
 

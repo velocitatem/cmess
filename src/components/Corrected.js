@@ -11,7 +11,7 @@ function randomFix(a, b, c) {
 
 function show() {
   $("#heading").html("Results")
-  var url = new URLSearchParams(decodeURI(window.location.search));
+  var url = new URLSearchParams(window.location.search);
   var output = url.get('essay');
   essay = output
   $("#essayWrap").attr("style", "overflow: scroll; height: 10cm; border: solid;")
