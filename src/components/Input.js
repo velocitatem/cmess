@@ -5,6 +5,9 @@ import $ from "jquery"
 
 var retr
 function retry() {
+  if ($("#userEssay").val().length >= 2000) {
+    alert("essay too long")
+  }
   $("#userEssay").val($("#userEssay").val())
   //localStorage.getItem("lastname")
 }
